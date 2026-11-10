@@ -76,6 +76,18 @@ return [
 ['install-network','Ports et réseau','Ports and networking'],
 ['install-hypergrid','Hypergrid','Hypergrid'],
 ]],
+['hosting','Héberger sa grille','Hosting your grid',[
+['hosting-choose','Choisir son hébergement','Choose your hosting'],
+['hosting-home','Héberger chez soi','Host at home'],
+['hosting-router','Box, NAT et loopback','Router, NAT and loopback'],
+['hosting-firewall','Ports et pare-feu','Ports and firewall'],
+['hosting-providers','VPS, AWS et serveurs dédiés','VPS, AWS and dedicated hosts'],
+['hosting-proxmox','Virtualisation et Proxmox','Virtualization and Proxmox'],
+['hosting-architecture','Standalone, ROBUST et régions','Standalone, ROBUST and regions'],
+['hosting-examples','Exemples d\'architectures','Hosting examples'],
+['hosting-monitoring','Supervision et sauvegardes','Monitoring and backups'],
+['hosting-troubleshooting','Dépannage réseau et hébergement','Hosting and network troubleshooting'],
+]],
 ['config','Configuration et régions','Configuration and regions',[
 ['configuration','Comprendre les fichiers INI','Understanding INI files'],
 ['sections','Sections INI','INI sections'],

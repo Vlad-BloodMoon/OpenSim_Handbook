@@ -182,3 +182,12 @@ Every WebRTC chapter displays the three canonical project links from the shared 
 - Ad hoc multi-user conferencing API and documentation: https://github.com/Vlad-BloodMoon/OpenSimulator-AdHocConferences
 
 Release downloads and SHA-256 checksum files are linked directly, and the AdHoc project links to FR/EN installation instructions. Do not use unrelated Janus binaries for this stack.
+
+## Hosting your grid / Héberger sa grille
+
+Ten beginner-friendly bilingual hosting chapters explain home desktops and servers, VPS and VMs, NAT loopback, dynamic IP and CGNAT, firewall rules, TCP/UDP, OVHcloud, AWS EC2 and Lightsail, Proxmox/KVM/LXC, Standalone and distributed ROBUST architectures, monitoring and troubleshooting. All example hosts, IP addresses and file paths are illustrative and not tied to any private grid.
+
+OpenSim documentation: https://opensimulator.dev/wiki/Network_Settings
+AWS EC2: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/
+AWS Lightsail: https://docs.aws.amazon.com/lightsail/latest/userguide/
+Proxmox VE: https://www.proxmox.com/en/products/proxmox-virtual-environment/features
