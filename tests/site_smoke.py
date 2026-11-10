@@ -87,6 +87,28 @@ def main():
                 for marker in ("PHP Warning:", "<b>Warning</b>:", "<b>Fatal error</b>:", "Fatal error:", "Parse error:", "Uncaught Error:"):
                     if marker in html:
                         raise AssertionError(f"{marker} in {uri}")
+                # Editorial regression checks: user-facing titles must never contain
+                # drafting instructions or leftover internal notes.
+                from html.parser import HTMLParser as _HTMLParser
+                class Headings(_HTMLParser):
+                    def __init__(self):
+                        super().__init__()
+                        self.depth = 0
+                        self.found = []
+                    def handle_starttag(self, tag, attrs):
+                        if tag in ("h1", "h2", "h3", "h4"):
+                            self.depth += 1
+                    def handle_endtag(self, tag):
+                        if tag in ("h1", "h2", "h3", "h4") and self.depth:
+                            self.depth -= 1
+                    def handle_data(self, data):
+                        if self.depth:
+                            self.found.append(data)
+                headings = Headings()
+                headings.feed(html)
+                for heading in headings.found:
+                    if any(term in heading.casefold() for term in ("sans duplication", "no duplication", "ton fork", "your fork", "todo", "fixme")):
+                        raise AssertionError(f"Editorial note in {uri}: {heading}")
                 parser = Assets()
                 parser.feed(html)
                 for link in parser.refs:
