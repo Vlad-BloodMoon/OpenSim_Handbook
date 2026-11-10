@@ -115,6 +115,9 @@ return [
 ['voice-conferences','Conférences','Conferences'],
 ['voice-troubleshooting','Dépannage vocal','Voice troubleshooting'],
 ]],
+['tools','Outils pratiques','Practical tools',[
+['practical-tools','Générateur UUID et convertisseur timestamp','UUID generator and timestamp converter'],
+]],
 ['help','Dépannage et références','Troubleshooting and references',[
 ['install-logs','Lire les logs','Read logs'],
 ['install-checklist','Dépannage d\'installation','Installation troubleshooting'],

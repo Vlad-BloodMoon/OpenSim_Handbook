@@ -84,6 +84,13 @@ The original variables catalogue came from the Outworldz/Opensim-Variables linea
 
 The bilingual chapter [`displaynames.php`](displaynames.php) covers architecture, Firestorm compatibility, the simulator module, PHP/MySQL backend, `robust.UserAccounts` read-only SQL access, backend configuration, integration, testing and log-first troubleshooting. The original project and its authoritative installation instructions are hosted at https://github.com/Vlad-BloodMoon/OpenSimulator-DisplayNames . **Security note:** the sample backend's `allow_all_ips=true` is not authentication; evaluate controls on the write endpoints before deploying to untrusted networks.
 
+## Free web utilities / Outils web gratuits
+
+- UUID generator / Générateur UUID : https://bloodmoonpack.com/uuid/
+- Timestamp converter / Convertisseur timestamp : https://bloodmoonpack.com/timestamp/
+
+Both are linked in the bilingual [`practical-tools.php`](practical-tools.php) chapter and listed on the home page and in the expandable table of contents. Before changing account creation timestamps directly in SQL, check the real schema, timestamp units and database backups.
+
 ## Existing content
 - OAR: load/save, assets, merge, terrain/parcels, displacement, rotation, filtering and safeguards.
 - IAR: full and no-asset backups, permissions and exclusions, --merge, creator information.
