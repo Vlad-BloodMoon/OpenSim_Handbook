@@ -1,6 +1,12 @@
-# OpenSimulator Handbook — PHP Encyclopedia (FR / EN)
+# OpenSimulator Handbook — Encyclopédie OpenSimulator (FR / EN)
 
-**Community reference for OpenSimulator**, with independent PHP pages, exact command options grounded in the OpenSimulator source, practical restore procedures, diagnostic guides, and a searchable technical catalog.
+**FR —** Encyclopédie communautaire et bilingue pour installer, configurer, administrer et dépanner OpenSimulator : Standalone, ROBUST, Hypergrid, FSAssets et inodes, MySQL/MariaDB, OAR/IAR, LSL/OSSL, WebRTC et restauration d'une grille.
+
+**EN —** Bilingual community handbook for installing, configuring, operating and troubleshooting OpenSimulator: Standalone, ROBUST, Hypergrid, FSAssets and inodes, MySQL/MariaDB, OAR/IAR, LSL/OSSL, WebRTC and grid recovery.
+
+**Projet / Repository :** https://github.com/Vlad-BloodMoon/OpenSim_Handbook
+
+**Site / Website :** https://bloodmoonpack.com/OpenSim_Variables/ (site deployment is managed separately from GitHub)
 
 ## Deployment / Installation
 
