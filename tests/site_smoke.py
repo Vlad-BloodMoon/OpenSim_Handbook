@@ -82,7 +82,9 @@ def main():
                     raise AssertionError("Incomplete HTML: " + uri)
                 if f'lang="{language}"' not in html:
                     raise AssertionError("Incorrect page language: " + uri)
-                for marker in ("Fatal error:", "Parse error:", "Uncaught Error:", "Warning:"):
+                # CSV descriptions can legitimately contain “Warning:” in plain text.
+                # Detect PHP runtime diagnostics without flagging quoted source data.
+                for marker in ("PHP Warning:", "<b>Warning</b>:", "<b>Fatal error</b>:", "Fatal error:", "Parse error:", "Uncaught Error:"):
                     if marker in html:
                         raise AssertionError(f"{marker} in {uri}")
                 parser = Assets()
