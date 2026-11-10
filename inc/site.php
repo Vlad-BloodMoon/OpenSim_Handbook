@@ -96,6 +96,7 @@ return [
 ['fsassets-inodes','Inodes et performances','Inodes and performance'],
 ['fsassets-migration','Migration et déplacement','Migration and relocation'],
 ['fsassets-backup','Sauvegarde et restauration','Backup and restore'],
+['fsassets-hot-backup','Sauvegarde à chaud et rsync','Hot backups and rsync'],
 ['fsassets-troubleshooting','Dépannage FSAssets','FSAssets troubleshooting'],
 ]],
 ['archives','Archives et restauration','Archives and restoration',[

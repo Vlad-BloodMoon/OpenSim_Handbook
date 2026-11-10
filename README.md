@@ -54,6 +54,7 @@ OpenSim_Handbook/ (deployed site; repository root)
     fsassets-inodes.php
     fsassets-migration.php
     fsassets-backup.php
+    fsassets-hot-backup.php
     fsassets-troubleshooting.php
     displaynames.php
     voice.php
@@ -152,6 +153,10 @@ Reference base: `Vlad-BloodMoon/opensim` `BUILDING.md`, `bin/OpenSim.ini.example
 Every incident description in installation checks, archive/region troubleshooting, and WebRTC voice troubleshooting now follows a structured order: symptom and background → relevant logs → likely search terms (not guaranteed exact log messages) → read-only verification → conditional fix. Generic diagnostic markup is implemented in `inc/site.php`.
 
 OpenSim.log and Robust.log are distinct and often both relevant; read `install-logs.php` before modifying configuration. Back up logs and redact sensitive details before sharing.
+
+## FSAssets hot backup and staged migration / Sauvegarde à chaud
+
+The bilingual `fsassets-hot-backup.php` chapter explains low-impact online pre-copy (`nice`/`ionice`/`rsync`), persistent `screen` sessions, `rsync -a --dry-run`, final synchronization under a verified no-write window, SQL/filesystem consistency, retention and actual restoration tests. All shell paths are generic. It distinguishes staged disk migration from a strictly no-pause hot backup requiring coordinated snapshots and explicit consistency verification.
 
 ## FSAssets deep-dive / Guide FSAssets approfondi
 
