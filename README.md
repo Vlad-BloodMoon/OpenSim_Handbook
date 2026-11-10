@@ -6,7 +6,11 @@
 
 **Projet / Repository :** https://github.com/Vlad-BloodMoon/OpenSim_Handbook
 
-**Site / Website :** https://bloodmoonpack.com/OpenSim_Variables/ (site deployment is managed separately from GitHub)
+**Démo en ligne / Live demo :** https://bloodmoonpack.com/OpenSim_Handbook/
+
+Explore the complete bilingual handbook online, including installation, FSAssets, ROBUST, troubleshooting and administration guides.
+
+Découvrez l'encyclopédie directement sur le site de démonstration, en français et en anglais.
 
 ## Deployment / Installation
 
