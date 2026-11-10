@@ -22,6 +22,47 @@ function diagnostic_steps(array $d): void {
     }
     echo '</div>';
 }
+function voice_resources(): void {
+    $items=[
+        [
+          'BloodMoon Voice — serveur vocal','BloodMoon Voice — voice server',
+          'Release v1.0.0 et installateur','Release v1.0.0 and installer',
+          'https://github.com/Vlad-BloodMoon/BloodMoon-Voice/releases/tag/v1.0.0',
+          'https://github.com/Vlad-BloodMoon/BloodMoon-Voice/releases/download/v1.0.0/BloodMoon-Voice-installer-v1.0.0.tar.gz',
+          'https://github.com/Vlad-BloodMoon/BloodMoon-Voice/releases/download/v1.0.0/BloodMoon-Voice-installer-v1.0.0.tar.gz.sha256'
+        ],
+        [
+          'Modules WebRTC OpenSimulator','OpenSimulator WebRTC modules',
+          'Release v0.9.3.1-webrtc.3, ZIP DLL/PDB','Release v0.9.3.1-webrtc.3, DLL/PDB ZIP',
+          'https://github.com/Vlad-BloodMoon/opensim/releases/tag/v0.9.3.1-webrtc.3',
+          'https://github.com/Vlad-BloodMoon/opensim/releases/download/v0.9.3.1-webrtc.3/WebRTC_Modules_BloodMoon_0.9.3.1-webrtc.3.zip',
+          'https://github.com/Vlad-BloodMoon/opensim/releases/download/v0.9.3.1-webrtc.3/WebRTC_Modules_BloodMoon_0.9.3.1-webrtc.3.zip.sha256'
+        ],
+        [
+          'OpenSimulator AdHoc Conferences','OpenSimulator AdHoc Conferences',
+          'Dépôt PHP/MySQL et guide d’installation','PHP/MySQL source and installation guide',
+          'https://github.com/Vlad-BloodMoon/OpenSimulator-AdHocConferences',
+          'https://github.com/Vlad-BloodMoon/OpenSimulator-AdHocConferences/blob/main/docs/INSTALLATION.fr.md',
+          'https://github.com/Vlad-BloodMoon/OpenSimulator-AdHocConferences/blob/main/docs/INSTALLATION.en.md'
+        ]
+    ];
+    echo '<section class="download-panel voice-resources">';
+    echo '<h2>'.e(t('Dépôts et téléchargements officiels','Official repositories and downloads')).'</h2>';
+    echo '<p>'.e(t('Trois composants distincts : serveur vocal, modules simulateur, et conférences ad hoc optionnelles. Choisis les versions compatibles avec ton installation.','Three distinct components: voice server, simulator modules, and optional ad hoc conferences. Use versions compatible with your installation.')).'</p>';
+    echo '<div class="voice-resource-list">';
+    foreach($items as $i=>$item){
+        echo '<div class="voice-resource">';
+        echo '<strong>'.e(t($item[0],$item[1])).'</strong>';
+        echo '<span>'.e(t($item[2],$item[3])).'</span>';
+        echo '<div class="voice-resource-links">';
+        echo '<a href="'.e($item[4]).'" target="_blank" rel="noopener">'.e(t('Dépôt / release','Repository / release')).'</a>';
+        echo '<a href="'.e($item[5]).'" target="_blank" rel="noopener">'.e($i===2?t('Installation FR','Installation FR'):t('Télécharger','Download')).'</a>';
+        echo '<a href="'.e($item[6]).'" target="_blank" rel="noopener">'.e($i===2?t('Installation EN','Installation EN'):t('SHA-256','SHA-256')).'</a>';
+        echo '</div></div>';
+    }
+    echo '</div>';
+    echo '</section>';
+}
 function subheading($fr,$en){echo '<h3>'.e(t($fr,$en)).'</h3>';}
 function options_table($rows){echo '<div class="overflow"><table><thead><tr><th>'.e(t('Option','Option')).'</th><th>'.e(t('Signification','Meaning')).'</th><th>'.e(t('Attention','Caution')).'</th></tr></thead><tbody>';foreach($rows as $r)echo '<tr><td><code>'.e($r[0]).'</code></td><td>'.e(t($r[1],$r[2])).'</td><td>'.e(t($r[3],$r[4])).'</td></tr>';echo '</tbody></table></div>';}
 function handbook_groups(): array {

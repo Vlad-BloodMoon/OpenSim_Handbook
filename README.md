@@ -160,3 +160,13 @@ Five bilingual PHP chapters cover storage architecture and configuration, inode/
 ## Site navigation (2026-11)
 
 The single bilingual registry `handbook_groups()` in `inc/site.php` drives both the collapsible sidebar and **all** home-page links. Each of the 36 technical pages appears exactly once in one of eight topic groups; `index.php` is always accessible separately. All five FSAssets chapters and the four newest SQL/ROBUST/recovery/monitoring guides are listed as individual entries. The active group opens natively through HTML `<details>` without requiring JavaScript.
+
+## Voice resources / Téléchargements vocaux
+
+Every WebRTC chapter displays the three canonical project links from the shared `voice_resources()` component in `inc/site.php`:
+
+- Voice server and installer (BloodMoon Voice v1.0.0): https://github.com/Vlad-BloodMoon/BloodMoon-Voice/releases/tag/v1.0.0
+- OpenSimulator simulator modules (v0.9.3.1-webrtc.3): https://github.com/Vlad-BloodMoon/opensim/releases/tag/v0.9.3.1-webrtc.3
+- Ad hoc multi-user conferencing API and documentation: https://github.com/Vlad-BloodMoon/OpenSimulator-AdHocConferences
+
+Release downloads and SHA-256 checksum files are linked directly, and the AdHoc project links to FR/EN installation instructions. Do not use unrelated Janus binaries for this stack.
