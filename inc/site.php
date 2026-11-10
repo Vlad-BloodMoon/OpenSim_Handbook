@@ -46,6 +46,7 @@ return [
 ['services','ROBUST et bases de données','ROBUST and databases',[
 ['robust-services','Services centraux ROBUST','ROBUST central services'],
 ['database-admin','MySQL et MariaDB','MySQL and MariaDB'],
+['displaynames','Module Display Names','Display Names module'],
 ]],
 ['storage','FSAssets : stockage','FSAssets: storage',[
 ['fsassets','Architecture et configuration','Architecture and configuration'],

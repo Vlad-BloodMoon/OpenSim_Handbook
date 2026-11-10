@@ -16,15 +16,15 @@ Découvrez l'encyclopédie directement sur le site de démonstration, en frança
 
 1. Back up your existing web directory.
 2. Clone or download the `main` branch of **Vlad-BloodMoon/OpenSim_Handbook**.
-3. Copy the **contents of this repository root** (PHP pages, `assets/`, `inc/`, `data/`, and `INI.CSV`) into the existing web directory, e.g. `/var/www/BloodMoon/OpenSim_Variables/`. Do not upload `.github/` or `tests/` to the public web directory.
+3. Copy the **contents of this repository root** (PHP pages, `assets/`, `inc/`, `data/`, and `INI.CSV`) into the existing web directory, e.g. `/var/www/BloodMoon/OpenSim_Handbook/`. Do not upload `.github/` or `tests/` to the public web directory.
 4. Keep **`INI.CSV` beside `dictionary.php`**; the INI catalog pages require this file.
-5. Open **`https://YOUR-DOMAIN/OpenSim_Variables/index.php`**.
+5. Open **`https://YOUR-DOMAIN/OpenSim_Handbook/index.php`**.
 6. If you still have an older `index.html` in the target web directory, **rename it to `index.html.backup`** after saving a backup. Otherwise the folder URL may continue to show the old HTML version depending on your web server.
 7. Check these direct URLs: `oar.php`, `iar.php`, `regions.php`, `scripts.php` and `dictionary.php`.
 
 Required layout:
 ```
-OpenSim_Variables/ (deployed site; repository root)
+OpenSim_Handbook/ (deployed site; repository root)
     index.php
     installation.php
     install-platforms.php
@@ -55,6 +55,7 @@ OpenSim_Variables/ (deployed site; repository root)
     fsassets-migration.php
     fsassets-backup.php
     fsassets-troubleshooting.php
+    displaynames.php
     voice.php
     voice-install.php
     voice-config.php
@@ -71,13 +72,17 @@ OpenSim_Variables/ (deployed site; repository root)
 ```
 Requires PHP 8+ and a conventional HTTP(S) web server. No database, framework or JS build. Recommended deployment check: PHP syntax validation, HTTP smoke tests for every page in both languages, and confirmation that `INI.CSV` returns HTTP 200.
 
-**Deploy changes to the existing URL:** copying the repository root contents into the site's `/OpenSim_Variables/` directory preserves existing public bookmarks and links. Do not change the public URL unless you also configure redirects.
+**Deploy changes to the existing URL:** copying the repository root contents into the site's `/OpenSim_Handbook/` directory preserves existing public bookmarks and links. Do not change the public URL unless you also configure redirects.
 
 ## Repository independence and data provenance
 
 The Handbook is independent of the original `Opensim-Variables` fork. The reference file `INI.CSV` is a **committed snapshot**, not generated at PHP runtime. The site reads it directly from the repository root. **`build_ini_csv.py` is intentionally not shipped**: it is not needed to run or deploy the handbook. Updating the snapshot later requires a separately reviewed import/generation process and checking the result against the installed OpenSimulator source version. It may contain settings from optional or older modules and is not a representation of any live grid's active secrets.
 
 The original variables catalogue came from the Outworldz/Opensim-Variables lineage; retain original source attribution and check upstream license terms when redistributing derivatives. This repository contains explanatory material written for the community and is not affiliated with the OpenSimulator project.
+
+## Display Names addon / Module Display Names
+
+The bilingual chapter [`displaynames.php`](displaynames.php) covers architecture, Firestorm compatibility, the simulator module, PHP/MySQL backend, `robust.UserAccounts` read-only SQL access, backend configuration, integration, testing and log-first troubleshooting. The original project and its authoritative installation instructions are hosted at https://github.com/Vlad-BloodMoon/OpenSimulator-DisplayNames . **Security note:** the sample backend's `allow_all_ips=true` is not authentication; evaluate controls on the write endpoints before deploying to untrusted networks.
 
 ## Existing content
 - OAR: load/save, assets, merge, terrain/parcels, displacement, rotation, filtering and safeguards.
