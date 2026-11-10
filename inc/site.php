@@ -43,7 +43,7 @@ function voice_resources(): void {
           'Dépôt PHP/MySQL et guide d’installation','PHP/MySQL source and installation guide',
           'https://github.com/Vlad-BloodMoon/OpenSimulator-AdHocConferences',
           'https://github.com/Vlad-BloodMoon/OpenSimulator-AdHocConferences/blob/main/docs/INSTALLATION.fr.md',
-          'https://github.com/Vlad-BloodMoon/OpenSimulator-AdHocConferences/blob/main/docs/INSTALLATION.en.md'
+          'https://github.com/Vlad-BloodMoon/OpenSimulator-AdHocConferences/blob/main/docs/INSTALLATION.md'
         ]
     ];
     echo '<section class="download-panel voice-resources">';
