@@ -37,3 +37,10 @@ aside nav .sidebar-links a{font-size:.84rem;line-height:1.4;padding:7px 8px;over
 .home-page-grid a span:last-child{color:#4780af;font-size:1.35rem}
 @media(max-width:850px){.layout{display:block}aside{position:static;max-height:none;overflow:visible}aside nav{display:block}}
 @media(max-width:600px){.home-page-grid{grid-template-columns:1fr}.home-category{padding:13px}}
+
+/* Prominent module downloads */
+.download-panel{border:1px solid #bdd5ed;border-radius:12px;padding:18px 20px;margin:18px 0 22px;background:#f3f8ff}
+.download-panel h2{margin:0 0 10px;border:0;padding:0;font-size:1.34rem}
+.download-panel p{margin:8px 0}
+.download-link{display:inline-block;background:#175b96;color:#fff;text-decoration:none;font-weight:700;padding:10px 16px;border-radius:9px}
+.download-link:hover,.download-link:focus-visible{background:#0e426f;color:#fff}
