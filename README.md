@@ -105,6 +105,11 @@ Both are linked in the bilingual [`practical-tools.php`](practical-tools.php) ch
 - Code-only variables (dictionary.php): only records with an empty IniFiles reference. The two result sets do not overlap.
 
 ## Editorial safeguards
+
+Public pages must be written for readers who have not seen contributor discussions or working files. Do not refer to personal PDF printouts, uploaded drafts, chat exchanges or the reader as the repository owner. Cite public source URLs directly and distinguish verified code behavior from release-dependent or example-only commands. Preserve independent French and English explanations, avoid repeating full procedures across chapters, and link to one canonical procedure instead. Prefer neutral second-person plural in French. Keep release references aligned with the documented OpenSimulator 0.9.3.1 fork; its `master` branch is currently 0.9.3.1.
+
+The bilingual smoke test checks common editorial regressions as well as page rendering and internal links. Review both languages in the browser whenever a chapter changes.
+
 The documentation is **not yet exhaustive** and is not affiliated with the OpenSimulator project.
 Source verification is from the inspected `Vlad-BloodMoon/opensim` master branch as of November 2026. Confirm commands against your installed version before running them. Never publish passwords or tokens. Treat all archive imports as potentially destructive.
 
@@ -160,7 +165,7 @@ The bilingual `fsassets-hot-backup.php` chapter explains low-impact online pre-c
 
 ## FSAssets deep-dive / Guide FSAssets approfondi
 
-Five bilingual PHP chapters cover storage architecture and configuration, inode/byte capacity, SQL-to-FS migration and disk relocation, backups/restores, and log-first diagnostics. Source citations include `FSAssetService.cs`, `MySQLFSAssetData.cs`, schema migrations, `HGFSAssetService.cs` and ROBUST templates. Operational examples are not a substitute for testing on a staging grid.
+Six bilingual PHP chapters cover storage architecture and configuration, inode/byte capacity, SQL-to-FS migration and disk relocation, backups/restores, and log-first diagnostics. Source citations include `FSAssetService.cs`, `MySQLFSAssetData.cs`, schema migrations, `HGFSAssetService.cs` and ROBUST templates. Operational examples are not a substitute for testing on a staging grid.
 
 ## Independent operations chapters
 
@@ -171,7 +176,7 @@ Five bilingual PHP chapters cover storage architecture and configuration, inode/
 
 ## Site navigation (2026-11)
 
-The single bilingual registry `handbook_groups()` in `inc/site.php` drives both the collapsible sidebar and **all** home-page links. Each of the 36 technical pages appears exactly once in one of eight topic groups; `index.php` is always accessible separately. All five FSAssets chapters and the four newest SQL/ROBUST/recovery/monitoring guides are listed as individual entries. The active group opens natively through HTML `<details>` without requiring JavaScript.
+The single bilingual registry `handbook_groups()` in `inc/site.php` drives both the collapsible sidebar and **all** home-page links. Each technical page appears exactly once in one topic group; `index.php` is always accessible separately. FSAssets, databases, ROBUST, recovery and monitoring guides are listed individually. The active group opens natively through HTML `<details>` without requiring JavaScript.
 
 ## Voice resources / Téléchargements vocaux
 
