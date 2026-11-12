@@ -76,6 +76,16 @@ return [
 ['install-network','Ports et réseau','Ports and networking'],
 ['install-hypergrid','Hypergrid','Hypergrid'],
 ]],
+['hypergrid','Comprendre Hypergrid','Understanding Hypergrid',[
+['hypergrid-overview','Comprendre Hypergrid : principes et architecture','Understanding Hypergrid: principles and architecture'],
+['hypergrid-identity','Identité Hypergrid : UUID, UUI et grille d\'origine','Hypergrid identity: UUID, UUI and home grid'],
+['hypergrid-teleports','Comprendre une téléportation Hypergrid','Understanding a Hypergrid teleport'],
+['hypergrid-network','Réseau Hypergrid : DNS, ports, NAT et flux','Hypergrid networking: DNS, ports, NAT and traffic'],
+['hypergrid-assets','Inventaire, suitcase et assets Hypergrid','Hypergrid inventory, suitcase and assets'],
+['hypergrid-friends','Amitiés Hypergrid : confirmations, FriendsStore et migrations','Hypergrid friendships: confirmation, FriendsStore and migration'],
+['hypergrid-security','Sécurité et confiance entre grilles Hypergrid','Hypergrid security and inter-grid trust'],
+['hypergrid-troubleshooting','Dépannage Hypergrid : symptômes et diagnostic','Hypergrid troubleshooting: symptoms and diagnostics'],
+]],
 ['hosting','Héberger sa grille','Hosting your grid',[
 ['hosting-choose','Choisir son hébergement','Choose your hosting'],
 ['hosting-home','Héberger chez soi','Host at home'],

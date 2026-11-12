@@ -205,3 +205,9 @@ The whole Handbook uses `assets/opensimulator-favicon.svg`, a small vector adapt
 **FR :** Le lien « Proposer une correction / un ajout » dans l'en-tête commun ouvre le sélecteur de demandes GitHub : https://github.com/Vlad-BloodMoon/OpenSim_Handbook/issues/new/choose . Sélectionnez « Correction » pour signaler une erreur ou « Ajout de contenu » pour proposer un guide, un module ou un outil. Les demandes sont examinées avant modification du Handbook ; aucune mise à jour n'est publiée automatiquement. Pour soumettre directement des fichiers corrigés, utilisez une pull request : https://github.com/Vlad-BloodMoon/OpenSim_Handbook/pulls .
 
 **EN:** The shared header link “Suggest a correction / addition” opens GitHub's issue chooser. Select “Correction” to report a mistake, or “New content” to propose a guide, module or tool. Suggestions are reviewed before changes are made; nothing publishes automatically. Contributors familiar with GitHub can instead submit code through pull requests: https://github.com/Vlad-BloodMoon/OpenSim_Handbook/pulls .
+
+## Comprendre Hypergrid / Understanding Hypergrid
+
+Huit nouveaux guides bilingues (FR/EN) expliquent le fonctionnement fédéré de Hypergrid : architecture, identité et services de résidence, téléportations, réseau/DNS/NAT/ports, inventaire/suitcase/assets, amitiés intergrilles et table FriendsStore, sécurité et dépannage. Le guide d'installation existant `install-hypergrid.php` reste disponible.
+
+Eight bilingual guides explain Hypergrid federation, home identity, teleport flow, networking, inventory and assets, distributed friendship records, security and troubleshooting. The existing `install-hypergrid.php` installation guide remains available.
