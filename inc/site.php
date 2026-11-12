@@ -145,6 +145,9 @@ return [
 ['cache-console','Commandes console de cache : fcache','Cache console commands: fcache'],
 ['cache-internal','Autres caches internes : inventaire, régions et textures','Other internal caches: inventory, regions and textures'],
 ['cache-diagnostics','Dépanner les caches sans perturber la grille','Troubleshoot caches without disrupting a grid'],
+['cache-physics','Caches des moteurs physiques et des maillages','Physics engine and mesh caches'],
+['cache-accounts','Caches des comptes, régions et inventaires','Account, region and inventory caches'],
+['cache-scripts','Moteurs de scripts : fichiers d\'exécution et caches','Script engines: runtime files and caches'],
 ]],
 ['viewers','Viewers et performances graphiques','Viewers and graphics performance',[
 ['firestorm-optimization','Comprendre le lag et optimiser Firestorm','Understand lag and optimize Firestorm'],

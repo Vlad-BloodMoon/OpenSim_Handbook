@@ -219,3 +219,7 @@ Six new bilingual 0.9.3.1 guides cover ROBUST, GridStore versus RegionStore, est
 ## Comprendre les caches / Understanding OpenSimulator caches
 
 Five bilingual OpenSimulator 0.9.3.1 guides cover Flotsam asset caches (disk, memory and negative), all verified `fcache` simulator commands, INI parameters, inventory/account/region/J2K internal caches, and diagnostics. Distinguish disposable `assetcache` from permanent FSAssets. Examples use no personal paths or credentials.
+
+### Additional caches / Caches supplémentaires
+
+The cache section now also documents verified ubOde MeshCache settings, Meshmerizer sculpt maps, simulator account caches (including foreign users), and YEngine ScriptEngines runtime files. These are not interchangeable with Flotsam; no unverified console clear commands are prescribed.
