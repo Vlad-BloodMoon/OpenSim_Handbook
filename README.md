@@ -199,3 +199,9 @@ The bilingual [`firestorm-optimization.php`](firestorm-optimization.php) chapter
 ### Favicon OpenSimulator
 
 The whole Handbook uses `assets/opensimulator-favicon.svg`, a small vector adaptation of the public-domain OpenSimulator symbol, registered in the shared `inc/site.php` HTML head. Upload this asset along with the PHP pages to make the icon visible in browser tabs.
+
+## Community contributions / Contributions communautaires
+
+**FR :** Le lien « Proposer une correction / un ajout » dans l'en-tête commun ouvre le sélecteur de demandes GitHub : https://github.com/Vlad-BloodMoon/OpenSim_Handbook/issues/new/choose . Sélectionnez « Correction » pour signaler une erreur ou « Ajout de contenu » pour proposer un guide, un module ou un outil. Les demandes sont examinées avant modification du Handbook ; aucune mise à jour n'est publiée automatiquement. Pour soumettre directement des fichiers corrigés, utilisez une pull request : https://github.com/Vlad-BloodMoon/OpenSim_Handbook/pulls .
+
+**EN:** The shared header link “Suggest a correction / addition” opens GitHub's issue chooser. Select “Correction” to report a mistake, or “New content” to propose a guide, module or tool. Suggestions are reviewed before changes are made; nothing publishes automatically. Contributors familiar with GitHub can instead submit code through pull requests: https://github.com/Vlad-BloodMoon/OpenSim_Handbook/pulls .

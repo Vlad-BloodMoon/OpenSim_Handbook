@@ -44,3 +44,10 @@ aside nav .sidebar-links a{font-size:.84rem;line-height:1.4;padding:7px 8px;over
 .download-panel p{margin:8px 0}
 .download-link{display:inline-block;background:#175b96;color:#fff;text-decoration:none;font-weight:700;padding:10px 16px;border-radius:9px}
 .download-link:hover,.download-link:focus-visible{background:#0e426f;color:#fff}
+
+/* Community contribution entry in the shared header */
+.header-actions{display:flex;align-items:center;gap:12px;flex-wrap:wrap;justify-content:flex-end}
+.contribute-link{display:inline-flex;align-items:center;justify-content:center;padding:8px 12px;border:1px solid #b4d2e9;border-radius:9px;background:#eaf4ff;color:#174f85;font-weight:650;font-size:.88rem;line-height:1.25;text-decoration:none}
+.contribute-link:hover,.contribute-link:focus-visible{background:#d6ebff;border-color:#659ed0;color:#103c67}
+.contribute-link:focus-visible{outline:2px solid #296eaa;outline-offset:2px}
+@media(max-width:700px){.top-inner{flex-wrap:wrap}.header-actions{width:100%;justify-content:space-between}.contribute-link{flex:1;max-width:max-content}}
