@@ -14,7 +14,7 @@ sec('Terrains','Terrain commands');options_table([
 ['terrain bake','Conserver une référence de restauration du terrain','Save a baked terrain reference','Comprendre l\'état préalable avant modification','Understand current state first'],
 ['terrain revert','Revenir au terrain baké','Revert to baked terrain','Écrase des changements récents','Overwrites recent changes'],
 ['terrain stats','Lire des statistiques du terrain','Read terrain statistics','Diagnostic sans modification','Read-only diagnostics'],
-['terrain show','Lire une hauteur à un point','Inspect terrain height at a point','Historique PDF ; vérifier help','PDF historical; check help'],
+['terrain show','Lire une hauteur à un point','Inspect terrain height at a point','Commande ancienne ; vérifier help','Legacy command; check help'],
 ['terrain modify ...','Modifier une zone / ajouter un masque','Modify an area with optional mask','Tester les paramètres avant usage général','Test parameters first'],
 ['terrain flip','Inverser le terrain selon un axe','Flip terrain on an axis','Commande ancienne ; vérifier disponibilité','Legacy command; verify availability'],
 ['terrain rescale','Recaler les hauteurs du terrain','Rescale terrain heights','Modifie la topographie','Changes topography'],
