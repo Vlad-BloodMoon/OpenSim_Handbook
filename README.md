@@ -215,3 +215,7 @@ Eight bilingual guides explain Hypergrid federation, home identity, teleport flo
 ## Comprendre les bases de données / Understanding databases
 
 Six new bilingual 0.9.3.1 guides cover ROBUST, GridStore versus RegionStore, estates, links between Regions.ini / OpenSim.ini / estate tables, SQL configurations, backups and migrations. Source files and read-only examples are included. Existing MySQL administration documentation remains available.
+
+## Comprendre les caches / Understanding OpenSimulator caches
+
+Five bilingual OpenSimulator 0.9.3.1 guides cover Flotsam asset caches (disk, memory and negative), all verified `fcache` simulator commands, INI parameters, inventory/account/region/J2K internal caches, and diagnostics. Distinguish disposable `assetcache` from permanent FSAssets. Examples use no personal paths or credentials.

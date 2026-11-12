@@ -139,6 +139,13 @@ return [
 ['operations-monitoring','Supervision quotidienne','Daily monitoring'],
 ['performance','Performances détaillées','Performance tuning'],
 ]],
+['caches','Comprendre les caches OpenSimulator','Understanding OpenSimulator caches',[
+['cache-overview','Comprendre les caches OpenSimulator','Understanding OpenSimulator caches'],
+['cache-flotsam','Flotsam : cache disque, mémoire et cache négatif','Flotsam: disk, memory and negative caches'],
+['cache-console','Commandes console de cache : fcache','Cache console commands: fcache'],
+['cache-internal','Autres caches internes : inventaire, régions et textures','Other internal caches: inventory, regions and textures'],
+['cache-diagnostics','Dépanner les caches sans perturber la grille','Troubleshoot caches without disrupting a grid'],
+]],
 ['viewers','Viewers et performances graphiques','Viewers and graphics performance',[
 ['firestorm-optimization','Comprendre le lag et optimiser Firestorm','Understand lag and optimize Firestorm'],
 ]],
