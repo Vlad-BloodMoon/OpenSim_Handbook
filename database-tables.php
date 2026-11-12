@@ -1,0 +1,33 @@
+<?php require_once __DIR__.'/inc/site.php';begin_page('Tables SQL OpenSimulator 0.9.3.1','OpenSimulator 0.9.3.1 SQL tables','Explications détaillées pour OpenSimulator 0.9.3.1, basées sur les fichiers INI et le code source.','Detailed OpenSimulator 0.9.3.1 explanations based on INI templates and source code.');
+callout('Les bases et fichiers de votre installation peuvent être organisés autrement. Vérifiez toujours les paramètres réellement chargés. Ne modifiez pas directement les données SQL sans sauvegarde.','Your deployment may organize schemas and files differently. Always inspect actual loaded settings. Never edit SQL data directly without a backup.');
+echo '<nav class="install-toc"><strong>'.e(t('Dans ce chapitre','In this chapter')).'</strong><ul>';
+echo '<li><a href="#db-1">'.e(t('Les familles de migrations','Migration families')).'</a></li>';
+echo '<li><a href="#db-2">'.e(t('Données des utilisateurs','User data')).'</a></li>';
+echo '<li><a href="#db-3">'.e(t('Données des régions','Region data')).'</a></li>';
+echo '<li><a href="#db-4">'.e(t('Données des estates','Estate data')).'</a></li>';
+echo '<li><a href="#db-5">'.e(t('Données additionnelles','Additional data')).'</a></li>';
+echo '</ul></nav>';
+echo '<section class="install-entry" id="db-1">';sec('Les familles de migrations','Migration families');p('Les migrations MySQL de la version 0.9.3.1 sont regroupées par domaines : UserAccount, AuthStore, InventoryStore, FriendsStore, GridStore, RegionStore, EstateStore, Presence, etc. Le nom d\'un groupe de migrations n\'impose pas le nom de la base SQL dans laquelle les tables se trouvent.','MySQL 0.9.3.1 migrations are grouped by domain: UserAccount, AuthStore, InventoryStore, FriendsStore, GridStore, RegionStore, EstateStore, Presence and more. Migration group names do not dictate schema names.');echo '</section>';
+echo '<section class="install-entry" id="db-2">';sec('Données des utilisateurs','User data');p('Les comptes et authentifications, l\'inventaire, l\'apparence d\'avatar, les relations d\'amitié et la présence appartiennent à des services différents. Recopier une ligne de compte ne transfère ni les assets ni toutes les références d\'un avatar.','Accounts/authentication, inventory, avatar appearance, friendships and presence belong to different services. Copying one account row does not transfer assets or all user references.');echo '</section>';
+echo '<section class="install-entry" id="db-3">';sec('Données des régions','Region data');p('RegionStore regroupe les objets et parcelles, les terrains et les réglages de régions. GridStore sert au répertoire de régions : confondre les deux peut conduire à sauvegarder seulement les positions des régions et perdre leurs scènes.','RegionStore contains scene objects, parcels, terrain and region settings. GridStore is a region directory. Confusing the two may lead to backing up only region locations while losing actual scenes.');echo '</section>';
+echo '<section class="install-entry" id="db-4">';sec('Données des estates','Estate data');p('EstateStore rassemble les paramètres d\'estate et leurs listes d\'accès. estate_map associe un RegionID à un EstateID, tandis que estate_settings conserve notamment le nom et le propriétaire. Les valeurs DefaultEstate* n\'y sont pas toutes stockées sous leur nom INI.','EstateStore contains estate settings and access lists. estate_map maps RegionID to EstateID, and estate_settings stores the name and owner. Not every DefaultEstate* INI value appears there under an identical column name.');echo '</section>';
+echo '<section class="install-entry" id="db-5">';sec('Données additionnelles','Additional data');p('Les modules Groups, profils, économie, messages hors ligne et autres extensions peuvent utiliser des tables supplémentaires. Ce sont des configurations optionnelles à documenter séparément et non des tables obligatoires dans toute installation.','Groups, profiles, economy, offline messages and other add-ons may use additional tables. These are optional configurations, not mandatory tables in every installation.');echo '</section>';
+sample('SHOW DATABASES;
+-- Sélectionner ensuite uniquement le schéma identifié :
+USE region_data;
+SHOW TABLES;
+-- Vérifier la structure d\'une table présente :
+DESCRIBE regionsettings;','Commandes en lecture seule sur une instance autorisée ; adaptez les noms aux bases réellement utilisées.','Read-only commands on an authorized instance; adapt names to actual schemas.');
+sec('Autres guides du dossier','Other guides in this section');echo '<ul>';
+echo '<li><a href="database-overview.php?lang='.e($lang).'">'.e(t('Comprendre les bases de données OpenSimulator','Understanding OpenSimulator databases')).'</a></li>';
+echo '<li><a href="database-ini.php?lang='.e($lang).'">'.e(t('Fichiers INI et connexions SQL','INI files and SQL connections')).'</a></li>';
+echo '<li><a href="database-regions.php?lang='.e($lang).'">'.e(t('Regions.ini et tables des régions','Regions.ini and region tables')).'</a></li>';
+echo '<li><a href="database-estates.php?lang='.e($lang).'">'.e(t('OpenSim.ini, Estates.ini et stockage des estates','OpenSim.ini, Estates.ini and estate storage')).'</a></li>';
+echo '<li><a href="database-backups.php?lang='.e($lang).'">'.e(t('Sauvegarder et migrer les bases OpenSimulator','Backing up and migrating OpenSimulator databases')).'</a></li>';
+echo '<li><a href="database-admin.php?lang='.e($lang).'">'.e(t('Administrer MySQL / MariaDB','Administer MySQL / MariaDB')).'</a></li>';
+echo '<li><a href="install-grid.php?lang='.e($lang).'">'.e(t('Installer une grille ROBUST','Install a ROBUST grid')).'</a></li>';
+echo '<li><a href="fsassets.php?lang='.e($lang).'">'.e(t('Comprendre FSAssets','Understanding FSAssets')).'</a></li>';
+echo '</ul>';sec('Fichiers sources OpenSimulator 0.9.3.1','OpenSimulator 0.9.3.1 source files');echo '<ul>';
+echo '<li><a href="https://github.com/Vlad-BloodMoon/opensim/blob/master/OpenSim/Data/MySQL/Resources/RegionStore.migrations" target="_blank" rel="noopener">'.e('RegionStore.migrations').'</a></li>';
+echo '<li><a href="https://github.com/Vlad-BloodMoon/opensim/blob/master/OpenSim/Data/MySQL/Resources/EstateStore.migrations" target="_blank" rel="noopener">'.e('EstateStore.migrations').'</a></li>';
+echo '</ul>';end_page();

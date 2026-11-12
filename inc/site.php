@@ -110,6 +110,14 @@ return [
 ['robust-services','Services centraux ROBUST','ROBUST central services'],
 ['database-admin','MySQL et MariaDB','MySQL and MariaDB'],
 ]],
+['database-guide','Comprendre les bases de données','Understanding databases',[
+['database-overview','Comprendre les bases de données OpenSimulator','Understanding OpenSimulator databases'],
+['database-ini','Fichiers INI et connexions SQL','INI files and SQL connections'],
+['database-regions','Regions.ini et tables des régions','Regions.ini and region tables'],
+['database-estates','OpenSim.ini, Estates.ini et stockage des estates','OpenSim.ini, Estates.ini and estate storage'],
+['database-tables','Tables SQL OpenSimulator 0.9.3.1','OpenSimulator 0.9.3.1 SQL tables'],
+['database-backups','Sauvegarder et migrer les bases OpenSimulator','Backing up and migrating OpenSimulator databases'],
+]],
 ['displaynames-addon','Module Display Names','Display Names module',[
 ['displaynames','Présentation, installation et dépannage','Overview, installation and troubleshooting'],
 ]],

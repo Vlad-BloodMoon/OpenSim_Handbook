@@ -211,3 +211,7 @@ The whole Handbook uses `assets/opensimulator-favicon.svg`, a small vector adapt
 Huit nouveaux guides bilingues (FR/EN) expliquent le fonctionnement fédéré de Hypergrid : architecture, identité et services de résidence, téléportations, réseau/DNS/NAT/ports, inventaire/suitcase/assets, amitiés intergrilles et table FriendsStore, sécurité et dépannage. Le guide d'installation existant `install-hypergrid.php` reste disponible.
 
 Eight bilingual guides explain Hypergrid federation, home identity, teleport flow, networking, inventory and assets, distributed friendship records, security and troubleshooting. The existing `install-hypergrid.php` installation guide remains available.
+
+## Comprendre les bases de données / Understanding databases
+
+Six new bilingual 0.9.3.1 guides cover ROBUST, GridStore versus RegionStore, estates, links between Regions.ini / OpenSim.ini / estate tables, SQL configurations, backups and migrations. Source files and read-only examples are included. Existing MySQL administration documentation remains available.
