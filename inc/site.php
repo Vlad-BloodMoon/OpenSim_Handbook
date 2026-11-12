@@ -121,6 +121,9 @@ return [
 ['operations-monitoring','Supervision quotidienne','Daily monitoring'],
 ['performance','Performances détaillées','Performance tuning'],
 ]],
+['viewers','Viewers et performances graphiques','Viewers and graphics performance',[
+['firestorm-optimization','Comprendre le lag et optimiser Firestorm','Understand lag and optimize Firestorm'],
+]],
 ['voice','Voix WebRTC','WebRTC voice',[
 ['voice','Présentation','Overview'],
 ['voice-install','Installation','Installation'],

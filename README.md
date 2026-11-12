@@ -191,3 +191,7 @@ OpenSim documentation: https://opensimulator.dev/wiki/Network_Settings
 AWS EC2: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/
 AWS Lightsail: https://docs.aws.amazon.com/lightsail/latest/userguide/
 Proxmox VE: https://www.proxmox.com/en/products/proxmox-virtual-environment/features
+
+## Viewers and graphics performance / Viewers et performances graphiques
+
+The bilingual [`firestorm-optimization.php`](firestorm-optimization.php) chapter teaches client-side FPS, draw distance, shadows, avatar complexity, cache and Hypergrid behavior, Ping SIM/Packet Loss, and simulator-versus-network diagnosis. It is general-purpose OpenSimulator guidance, without references to any specific grid or host.
