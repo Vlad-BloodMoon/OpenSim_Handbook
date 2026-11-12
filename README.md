@@ -195,3 +195,7 @@ Proxmox VE: https://www.proxmox.com/en/products/proxmox-virtual-environment/feat
 ## Viewers and graphics performance / Viewers et performances graphiques
 
 The bilingual [`firestorm-optimization.php`](firestorm-optimization.php) chapter teaches client-side FPS, draw distance, shadows, avatar complexity, cache and Hypergrid behavior, Ping SIM/Packet Loss, and simulator-versus-network diagnosis. It is general-purpose OpenSimulator guidance, without references to any specific grid or host.
+
+### Favicon OpenSimulator
+
+The whole Handbook uses `assets/opensimulator-favicon.svg`, a small vector adaptation of the public-domain OpenSimulator symbol, registered in the shared `inc/site.php` HTML head. Upload this asset along with the PHP pages to make the icon visible in browser tabs.
