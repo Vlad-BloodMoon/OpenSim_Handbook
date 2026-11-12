@@ -139,6 +139,16 @@ return [
 ['operations-monitoring','Supervision quotidienne','Daily monitoring'],
 ['performance','Performances détaillées','Performance tuning'],
 ]],
+['console-commands','Commandes console OpenSimulator','OpenSimulator console commands',[
+['commands-overview','Commandes console : commencer','Console commands: essentials'],
+['commands-archives-assets','Archives, assets et caches','Archives, assets and caches'],
+['commands-regions-estates','Régions et estates','Regions and estates'],
+['commands-terrain-objects','Terrains, objets et scènes','Terrain, objects and scenes'],
+['commands-users-robust','Utilisateurs et ROBUST','Users and ROBUST'],
+['commands-scripts-monitoring','Scripts, statistiques et débogage','Scripts, statistics and debugging'],
+['commands-hypergrid-modules','Hypergrid, modules et configuration','Hypergrid, modules and configuration'],
+['commands-safety','Commandes : méthodes et précautions','Console safety and workflows'],
+]],
 ['caches','Comprendre les caches OpenSimulator','Understanding OpenSimulator caches',[
 ['cache-overview','Comprendre les caches OpenSimulator','Understanding OpenSimulator caches'],
 ['cache-flotsam','Flotsam : cache disque, mémoire et cache négatif','Flotsam: disk, memory and negative caches'],

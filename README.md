@@ -223,3 +223,7 @@ Five bilingual OpenSimulator 0.9.3.1 guides cover Flotsam asset caches (disk, me
 ### Additional caches / Caches supplémentaires
 
 The cache section now also documents verified ubOde MeshCache settings, Meshmerizer sculpt maps, simulator account caches (including foreign users), and YEngine ScriptEngines runtime files. These are not interchangeable with Flotsam; no unverified console clear commands are prescribed.
+
+## Console commands / Commandes console (OpenSimulator 0.9.3.1)
+
+Eight bilingual guides cover console scope and help, general operations, OAR/IAR, Flotsam, regions, estates, terrain, objects, users and ROBUST, YEngine, statistics, Hypergrid, modules, and safety. The source was a user-provided print of the historical official Server Commands/fr wiki (19 March 2025), compared against OpenSimulator 0.9.3.1 source. Commands not verified from the checked modules are marked historical and require checking actual console `help`.
