@@ -109,6 +109,16 @@ def main():
                 for heading in headings.found:
                     if any(term in heading.casefold() for term in ("sans duplication", "no duplication", "ton fork", "your fork", "todo", "fixme")):
                         raise AssertionError(f"Editorial note in {uri}: {heading}")
+                # Check recurring internal-editing artifacts on the public pages.
+                editorial_markers = (
+                    'Le code de ton dépôt', 'Your repository explicitly states',
+                    'Notre documentation BloodMoon Voice', 'Our BloodMoon Voice documentation',
+                    'PDF historique', 'historical PDF', 'transmis par le contributeur',
+                    'contributor-provided',
+                )
+                for marker in editorial_markers:
+                    if marker.casefold() in html.casefold():
+                        raise AssertionError(f'Internal editorial wording in {uri}: {marker}')
                 parser = Assets()
                 parser.feed(html)
                 for link in parser.refs:
